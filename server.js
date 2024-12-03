@@ -1,9 +1,9 @@
 require('dotenv').config();
-const http = require('http');
+const http    = require('http');
 const express = require('express');
-const RED = require('node-red');
+const RED     = require('node-red');
 
-const app = express();
+const app    = express();
 const server = http.createServer(app);
 
 const settings = {
