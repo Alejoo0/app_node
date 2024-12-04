@@ -6,8 +6,10 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "4.21.1",
     "dotenv": "^16.4.7",
     "node-red": "^4.0.5",
-    "express": "4.21.1"
+    "node-red-dashboard": "^3.6.5"
   }
 }
