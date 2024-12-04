@@ -34,7 +34,7 @@ RED.init(server, settings);
 app.use(settings.httpAdminRoot, RED.httpAdmin);
 app.use(settings.httpNodeRoot, RED.httpNode);
 
-const PORT = process.env.PORT; // cPanel asigna el puerto automáticamente
+const PORT = process.env.PORT || 8000 // Cpanel no otorga ningun puerto automaticamente
 
 server.listen(PORT, function() {
   console.log(`Node-RED running on port ${PORT}`);
